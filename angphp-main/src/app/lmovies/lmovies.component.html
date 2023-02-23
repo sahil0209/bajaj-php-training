@@ -1,0 +1,40 @@
+<div class="body">
+  <div class="container">
+    <div *ngFor="let movie of movies" class="movie">
+      <img class="movie-image" src="{{ movie.poster }}" />
+      <span><i class="fa fa-align-left"></i></span>
+
+      <div class="movie-info">
+        <p class="title">{{ movie.name }}</p>
+        <p class="genres">{{ movie.genre }}</p>
+        <div class="movie-text">
+          <p>SUMMARY</p>
+          <div class="likes">
+            <span><i class="fa fa-thumbs-up"></i>{{ movie.rating }}</span>
+            <span><i class="fa fa-comment"></i>Good one</span>
+          </div>
+        </div>
+        <div class="summary">
+          <p class="text">
+            {{ movie.description }}
+          </p>
+          <p class="cast">
+            {{ movie.cast }}
+          </p>
+        </div>
+        <div class="actions">
+          <a class="button" href="review-movie/{{movie.id}}"><i class="fa fa-book"> Review</i></a>
+          <div class="actions-more">
+            <i class="fa fa-save"></i>
+            <i class="fa fa-bookmark"></i>
+            <i class="fa fa-share-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+        </div>
+      </div>
+ 
+
